@@ -1,0 +1,8 @@
+flask
+fastapi
+uvicorn
+psycopg2
+celery
+redis
+requests
+python-dotenv
