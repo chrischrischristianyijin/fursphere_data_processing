@@ -1,0 +1,278 @@
+breed,m_score,b_score,t_score,i_score
+Affenpinscher,24,62,21,66
+Afghan Hound,68,35,53,44
+Airedale Terrier,22,57,52,37
+Akita,68,31,46,38
+Alaskan Malamute,22,57,70,61
+American Bulldog,36,42,46,40
+American English Coonhound,36,51,54,40
+American Eskimo Dog,13,58,34,44
+American Foxhound,67,52,57,38
+American Hairless Terrier,25,64,46,73
+American Leopard Hound,27,58,48,47
+American Staffordshire Terrier,36,59,14,40
+American Water Spaniel,27,48,60,37
+Anatolian Shepherd Dog,78,28,70,56
+Appenzeller Sennenhund,36,45,48,51
+Australian Cattle Dog,45,54,48,51
+Australian Kelpie,31,40,42,38
+Australian Shepherd,45,58,34,38
+Australian Stumpy Tail Cattle Dog,45,32,44,39
+Australian Terrier,35,51,32,47
+Azawakh,54,42,56,39
+Barbet,49,59,64,38
+Basenji,54,61,38,42
+Basset Fauve de Bretagne,22,61,40,52
+Basset Hound,46,40,56,32
+Bavarian Mountain Scent Hound,64,32,54,51
+Beagle,12,73,68,59
+Bearded Collie,49,60,24,38
+Beauceron,54,42,39,40
+Bedlington Terrier,22,42,64,40
+Belgian Laekenois,46,50,35,40
+Belgian Malinois,36,50,13,40
+Belgian Sheepdog,46,50,44,40
+Belgian Tervuren,46,50,35,40
+Bergamasco Sheepdog,47,58,50,43
+Berger Picard,58,42,39,38
+Bernese Mountain Dog,54,50,58,32
+Bichon Frise,22,73,46,69
+Biewer Terrier,45,47,42,36
+Black and Tan Coonhound,31,60,38,39
+Black Russian Terrier,54,59,35,32
+Bloodhound,46,60,56,41
+Bluetick Coonhound,30,51,46,38
+Boerboel,47,58,14,34
+Bohemian Shepherd,36,40,53,40
+Bolognese,42,54,54,61
+Border Collie,37,59,34,48
+Border Terrier,36,49,53,38
+Borzoi,68,43,56,40
+Boston Terrier,35,57,52,35
+Bouvier des Flandres,45,51,46,40
+Boxer,21,73,53,58
+Boykin Spaniel,36,48,52,39
+Bracco Italiano,45,59,49,39
+Braque du Bourbonnais,69,48,66,62
+Braque Francais Pyrenean,35,62,60,40
+Briard,37,51,29,43
+Brittany,30,59,52,44
+Broholmer,51,40,50,42
+Brussels Griffon,31,55,54,60
+Bull Terrier,13,66,70,60
+Bulldog,45,50,54,30
+Bullmastiff,45,42,46,40
+Cairn Terrier,39,54,32,51
+Canaan Dog,37,42,24,43
+Cane Corso,45,60,23,40
+Cardigan Welsh Corgi,45,51,46,40
+Carolina Dog,64,39,52,39
+Catahoula Leopard Dog,57,48,57,54
+Caucasian Shepherd Dog,25,50,33,45
+Cavalier King Charles Spaniel,41,47,66,52
+Central Asian Shepherd Dog,61,50,24,45
+Cesky Terrier,46,59,46,65
+Chesapeake Bay Retriever,46,60,32,41
+Chihuahua,36,51,42,55
+Chinese Crested,23,55,59,51
+Chinese Shar-Pei,78,43,43,34
+Chinook,67,40,42,27
+Chow Chow,55,61,48,57
+Cirneco dell’Etna,59,50,55,40
+Clumber Spaniel,55,50,54,42
+Cocker Spaniel,30,57,52,35
+Collie,45,40,68,38
+Coton de Tulear,26,58,76,36
+Croatian Sheepdog,36,41,42,39
+Curly-Coated Retriever,40,74,30,54
+Czechoslovakian Vlcak,31,54,35,44
+Dachshund,35,59,41,49
+Dalmatian,46,60,50,40
+Dandie Dinmont Terrier,55,60,38,43
+Danish-Swedish Farmdog,36,42,46,50
+Deutscher Wachtelhund,37,42,55,50
+Doberman Pinscher,44,32,52,37
+Dogo Argentino,26,52,55,40
+Dogue de Bordeaux,46,41,54,40
+Drentsche Patrijshond,59,51,46,55
+Drever,33,57,58,55
+Dutch Shepherd,48,61,23,39
+English Cocker Spaniel,27,48,42,46
+English Foxhound,44,51,69,38
+English Setter,26,50,53,37
+English Springer Spaniel,27,48,52,46
+English Toy Spaniel,33,74,61,63
+Entlebucher Mountain Dog,39,53,33,41
+Estrela Mountain Dog,47,50,28,42
+Eurasier,61,50,35,33
+Field Spaniel,33,46,78,65
+Finnish Lapphund,37,39,52,40
+Finnish Spitz,12,52,54,37
+Flat-Coated Retriever,20,50,42,36
+French Bulldog,25,72,36,73
+French Spaniel,60,59,60,42
+German Longhaired Pointer,68,40,42,36
+German Pinscher,30,61,22,39
+German Shepherd Dog,36,57,23,39
+German Shorthaired Pointer,34,59,42,36
+German Spitz,50,39,38,40
+German Wirehaired Pointer,57,50,43,39
+Giant Schnauzer,30,28,53,38
+Glen of Imaal Terrier,23,51,56,50
+Golden Retriever,20,63,52,48
+Gordon Setter,13,53,24,41
+Grand Basset Griffon Vendéen,20,53,56,38
+Great Dane,45,42,69,30
+Great Pyrenees,77,53,38,23
+Greater Swiss Mountain Dog,45,42,46,40
+Greyhound,76,52,57,38
+Hamiltonstovare,44,42,46,47
+Hanoverian Scenthound,79,42,56,34
+Harrier,25,51,53,36
+Havanese,35,58,35,59
+Hokkaido,41,34,55,41
+Hovawart,46,43,38,44
+Ibizan Hound,45,53,47,41
+Icelandic Sheepdog,26,58,52,45
+Irish Red and White Setter,34,51,58,45
+Irish Setter,11,52,54,35
+Irish Terrier,23,50,46,40
+Irish Water Spaniel,36,42,35,49
+Irish Wolfhound,77,51,47,32
+Italian Greyhound,25,56,47,67
+Jagdterrier,46,50,37,42
+Japanese Chin,37,51,65,43
+Japanese Spitz,36,49,44,47
+Jindo,35,52,25,42
+Kai Ken,59,43,42,42
+Karelian Bear Dog,70,40,41,42
+Keeshond,22,49,53,38
+Kerry Blue Terrier,46,52,40,56
+Kishu Ken,32,43,61,42
+Komondor,69,42,33,43
+Kromfohrlander,37,59,50,42
+Kuvasz,46,42,65,43
+Labrador Retriever,20,50,52,34
+Lagotto Romagnolo,46,48,42,39
+Lakeland Terrier,9,50,46,40
+Lancashire Heeler,31,50,35,46
+Lapponian Herder,41,57,29,50
+Leonberger,36,48,75,46
+Lhasa Apso,37,60,15,43
+Löwchen,35,50,46,37
+Maltese,24,63,64,60
+Manchester Terrier (Standard),36,58,44,48
+Manchester Terrier (Toy),36,58,35,48
+Mastiff,54,50,59,40
+Miniature American Shepherd,31,49,42,36
+Miniature Bull Terrier,45,52,47,40
+Miniature Pinscher,46,51,70,50
+Miniature Schnauzer,36,57,42,39
+Mountain Cur,54,63,40,42
+Mudi,23,50,42,39
+Neapolitan Mastiff,56,34,58,45
+Nederlandse Kooikerhondje,24,39,38,40
+Newfoundland,54,31,76,29
+Norfolk Terrier,45,41,40,62
+Norrbottenspets,58,52,46,41
+Norwegian Buhund,35,59,26,37
+Norwegian Elkhound,40,50,32,38
+Norwegian Lundehund,36,33,54,50
+Norwich Terrier,31,51,46,47
+Nova Scotia Duck Tolling Retriever,34,60,35,36
+Old English Sheepdog,54,60,47,50
+Otterhound,46,52,48,42
+Papillon,14,52,60,48
+Parson Russell Terrier,33,61,41,37
+Pekingese,61,42,43,44
+Pembroke Welsh Corgi,42,51,37,36
+Perro de Presa Canario,61,50,23,33
+Peruvian Inca Orchid,46,42,54,41
+Petit Basset Griffon Vendéen,35,43,56,38
+Pharaoh Hound,36,61,47,42
+Plott Hound,31,57,33,54
+Pointer,45,33,54,40
+Polish Lowland Sheepdog,28,62,25,58
+Pomeranian,14,59,46,40
+Poodle (Miniature),37,59,37,42
+Poodle (Standard),36,57,34,37
+Poodle (Toy),36,57,24,37
+Porcelaine,32,52,46,49
+Portuguese Podengo,59,65,37,54
+Portuguese Podengo Pequeno,9,65,54,60
+Portuguese Pointer,41,72,34,58
+Portuguese Sheepdog,36,52,46,41
+Portuguese Water Dog,45,50,44,48
+Pudelpointer,51,60,46,42
+Pug,36,50,64,38
+Puli,46,51,56,43
+Pumi,27,50,44,48
+Pyrenean Mastiff,70,50,52,42
+Pyrenean Shepherd,36,51,46,41
+Rafeiro do Alentejo,61,50,23,33
+Rat Terrier,22,72,53,51
+Redbone Coonhound,45,49,44,38
+Rhodesian Ridgeback,68,51,33,41
+Romanian Mioritic Shepherd Dog,60,42,33,44
+Rottweiler,51,41,53,42
+Russell Terrier,34,52,46,37
+Russian Toy,22,50,54,38
+Russian Tsvetnaya Bolonka,39,59,60,48
+Saint Bernard,27,59,54,48
+Saluki,81,52,57,56
+Samoyed,44,52,79,48
+Schapendoes,28,40,53,40
+Schipperke,23,66,38,63
+Scottish Deerhound,64,51,56,41
+Scottish Terrier,35,51,24,50
+Sealyham Terrier,36,42,47,54
+Segugio Italiano,51,42,56,40
+Shetland Sheepdog,30,57,42,58
+Shiba Inu,24,42,33,57
+Shih Tzu,27,50,46,48
+Shikoku,23,42,46,50
+Siberian Husky,22,43,56,38
+Silky Terrier,23,41,54,40
+Skye Terrier,46,51,47,43
+Sloughi,55,51,62,43
+Slovakian Wirehaired Pointer,43,52,47,37
+Slovensky Cuvac,47,32,46,42
+Slovensky Kopov,46,42,46,42
+Small Munsterlander Pointer,34,52,36,37
+Smooth Fox Terrier,44,51,54,38
+Soft Coated Wheaten Terrier,27,43,70,40
+Spanish Mastiff,47,58,37,42
+Spanish Water Dog,23,49,42,49
+Spinone Italiano,45,42,46,30
+Stabyhoun,57,59,50,39
+Staffordshire Bull Terrier,31,76,40,52
+Standard Schnauzer,22,60,52,48
+Sussex Spaniel,28,51,56,43
+Swedish Lapphund,24,73,27,62
+Swedish Vallhund,25,41,52,44
+Taiwan Dog,46,28,57,49
+Teddy Roosevelt Terrier,21,63,34,67
+Thai Ridgeback,60,43,57,42
+Tibetan Mastiff,77,60,38,41
+Tibetan Spaniel,14,73,36,64
+Tibetan Terrier,46,43,56,42
+Tornjak,50,58,44,40
+Tosa,70,40,46,34
+Toy Fox Terrier,35,49,42,36
+Transylvanian Hound,50,67,48,55
+Treeing Tennessee Brindle,37,50,46,42
+Treeing Walker Coonhound,45,60,43,39
+Vizsla,44,49,65,45
+Weimaraner,21,50,65,36
+Welsh Springer Spaniel,30,50,53,37
+Welsh Terrier,25,60,46,45
+West Highland White Terrier,22,41,49,38
+Wetterhoun,46,52,48,44
+Whippet,46,51,61,43
+Wire Fox Terrier,36,41,36,40
+Wirehaired Pointing Griffon,35,34,77,39
+Wirehaired Vizsla,68,33,77,40
+Working Kelpie,31,52,51,40
+Xoloitzcuintli,54,33,68,30
+Yakutian Laika,50,62,53,43
+Yorkshire Terrier,45,52,48,40

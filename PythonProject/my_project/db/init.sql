@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS survey_data (
+CREATE TABLE  survey_data (
     submission_id SERIAL PRIMARY KEY,             -- Unique ID per submission
     email TEXT NOT NULL,                          -- 用户的邮箱
     ip TEXT NOT NULL,                             -- 用户的 IP 地址
