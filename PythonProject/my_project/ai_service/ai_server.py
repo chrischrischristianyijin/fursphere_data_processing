@@ -55,64 +55,95 @@ class MbtiOutput(BaseModel):
         """,
     )
 
+    do_suggestion: str = Field(
+        description="""
+        Clearly recommend the best ways to positively interact with this pet,
+        matching its preferences and comfort. 100-150 characters
+        """,
+    )
+
+    do_not_suggestion: str = Field(
+        description="""
+        Humorously and empathetically describe interactions to avoid,
+        focusing on the pet's dislikes and sensitivities. 100-150 characters
+        """,
+    )
+
 class AIInput(BaseModel):
     input_data: Dict[str, Any]
 
 def generate_mbti_description(m_score, b_score, t_score, i_score):
-    description = "MBTI Score Interpretation:\n"
+    description = "📊 MBTI Score Interpretation:\n\n"
     
-    # E/I Dimension
-    if m_score <= 30:
-        description += "- Very Introverted: Quiet, Independent, Calm.\n"
+    # E/I Dimension (m_score)
+    if m_score <= 20:
+        description += "E/I (m_score): Extremely Introverted - Highly independent, quiet, and prefers solitude.\n"
+    elif m_score <= 40:
+        description += "E/I (m_score): Introverted - Reserved, calm, and enjoys personal space.\n"
     elif m_score <= 60:
-        description += "- Balanced: Cautious, Slightly Reserved, Organized.\n"
+        description += "E/I (m_score): Balanced - Cautious, slightly reserved, but sociable when comfortable.\n"
+    elif m_score <= 80:
+        description += "E/I (m_score): Extroverted - Energetic, playful, enjoys social interaction.\n"
     else:
-        description += "- Extroverted: Playful, Energetic, Sociable.\n"
+        description += "E/I (m_score): Highly Extroverted - Loves attention, very social, thrives on interaction.\n"
     
-    # S/N Dimension
-    if b_score <= 30:
-        description += "- Sensing: Practical, Detail-Oriented, Reliable.\n"
+    # S/N Dimension (b_score)
+    if b_score <= 20:
+        description += "S/N (b_score): Extremely Sensing - Highly practical, detail-oriented, and reliable.\n"
+    elif b_score <= 40:
+        description += "S/N (b_score): Sensing - Prefers routine, focuses on tangible details.\n"
     elif b_score <= 60:
-        description += "- Balanced: Realistic with Some Creativity.\n"
+        description += "S/N (b_score): Balanced - Combines practical thinking with occasional creativity.\n"
+    elif b_score <= 80:
+        description += "S/N (b_score): Intuitive - Curious, enjoys exploration and imaginative ideas.\n"
     else:
-        description += "- Intuitive: Curious, Innovative, Enjoys Exploration.\n"
+        description += "S/N (b_score): Highly Intuitive - Visionary, innovative, constantly seeking new possibilities.\n"
     
-    # T/F Dimension
-    if t_score <= 30:
-        description += "- Thinking: Logical, Independent, Strategic.\n"
+    # T/F Dimension (t_score)
+    if t_score <= 20:
+        description += "T/F (t_score): Highly Logical - Independent thinker, prefers strategy and structure.\n"
+    elif t_score <= 40:
+        description += "T/F (t_score): Logical - Prefers rational decision-making with less emotional influence.\n"
     elif t_score <= 60:
-        description += "- Balanced: Combines Logic with Empathy.\n"
+        description += "T/F (t_score): Balanced - Can combine logic and empathy to make decisions.\n"
+    elif t_score <= 80:
+        description += "T/F (t_score): Feeling - Compassionate, warm, and loyal to loved ones.\n"
     else:
-        description += "- Feeling: Compassionate, Emotional, Loyal.\n"
+        description += "T/F (t_score): Highly Emotional - Very empathetic, makes decisions based on feelings.\n"
     
-    # J/P Dimension
-    if i_score <= 30:
-        description += "- Judging: Organized, Reliable, Rule-Oriented.\n"
+    # J/P Dimension (i_score)
+    if i_score <= 20:
+        description += "J/P (i_score): Extremely Organized - Very structured, reliable, and follows rules strictly.\n"
+    elif i_score <= 40:
+        description += "J/P (i_score): Organized - Prefers planning and order, but can be flexible if needed.\n"
     elif i_score <= 60:
-        description += "- Balanced: Combines Planning and Flexibility.\n"
+        description += "J/P (i_score): Balanced - Can adapt between planning and spontaneity as needed.\n"
+    elif i_score <= 80:
+        description += "J/P (i_score): Perceiving - Prefers flexibility, curious and spontaneous.\n"
     else:
-        description += "- Perceiving: Adaptable, Spontaneous, Curious.\n"
+        description += "J/P (i_score): Highly Spontaneous - Loves exploring, very adaptable, enjoys improvisation.\n"
     
     return description
 
+
 def map_score_to_label(score, dimension):
     if dimension == 'E/I':
-        if score <= 30:
+        if score <= 50:
             return "Extraversion"
         else:
             return "Introversion"
     elif dimension == 'S/N':
-        if score <= 30:
+        if score <= 50:
             return "Sensing"
         else:
             return "Intuition"
     elif dimension == 'T/F':
-        if score <= 30:
+        if score <= 50:
             return "Thinking"
         else:
             return "Feeling"
     elif dimension == 'J/P':
-        if score <= 30:
+        if score <= 50:
             return "Judging"
         else:
             return "Perceiving"
@@ -136,37 +167,35 @@ async def process_ai(input: AIInput):
         
         # Build prompt for AI
         prompt = f"""
-        Please analyze the personality of {pet_name} ({pet_type}, breed: {pet_breed}) based on the following MBTI characteristics:
-
+        Analyze the personality of {pet_name} ({pet_type}, breed: {pet_breed}) based on these MBTI characteristics:
         {mbti_description}
+        
+        Provide your analysis strictly following this structured format and EXACT character limits:
+        [E/I Explanation] (150-200 characters)
+        Creatively describe the pet's energy level and social interactions vividly and joyfully, making its character sparkle.
 
-        Please provide your analysis in the following format, with EXACT character limits:
+        [S/N Explanation] (150-200 characters)
+        Expressively illustrate how the pet perceives the world—through keen senses or playful imagination. Make this description lively.
 
-        [E/I Explanation]
-        <150-200 characters>
-        Describe the pet's energy level and social interactions in a fun, captivating way. Make it feel like the pet's personality is bursting from the description.
+        [T/F Explanation] (150-200 characters)
+        Warmly portray whether this pet is emotionally intuitive or logically grounded, bringing its loving or thoughtful traits alive.
 
-        [S/N Explanation]
-        <150-200 characters>
-        Paint a vivid picture of how this pet interacts with the world. Does it rely on sharp senses or dreamy creativity? Use playful language to highlight these traits.
+        [J/P Explanation] (150-200 characters)
+        Vibrantly depict the pet's style—structured and deliberate or spontaneous and adventurous, highlighting its charming traits.
 
-        [T/F Explanation]
-        <150-200 characters>
-        Express the pet's emotional or logical side with personality and warmth. Whether it's a devoted protector or a tender-hearted snuggler, make it feel real.
+        [Personal Speech] (50-75 characters)
+        Craft a witty, charming, or heartwarming quote that encapsulates the pet's personality.
 
-        [J/P Explanation]
-        <150-200 characters>
-        Describe the pet's approach to life—whether it's a structured planner or a carefree adventurer. Use lively phrases to showcase its style.
+        [Third Person Diagnosis] (175-216 characters)
+        Present an engaging third-person snapshot capturing the pet's personality vividly, filled with charming quirks and endearing qualities.
 
-        [Personal Speech]
-        <50-75 characters>
-        Write a short, catchy quote the pet might say. Keep it humorous, charming, or endearing—like something that reflects their essence.
+        Additionally, include:
 
-        [Third Person Diagnosis]
-        <175-216 characters>
-        Provide a captivating third-person description of this pet's personality. Make it feel like the reader is getting a glimpse into a living, breathing character with quirks and charm.
+        [Do] (100-150 characters)
+        Clearly recommend the best ways to positively interact with this pet, matching its preferences and comfort.
 
-        Remember: Character limits are strict requirements. Count your characters carefully for each section.
+        [Do Not] (100-150 characters)
+        Humorously and empathetically describe interactions to avoid, focusing on the pet's dislikes and sensitivities.
         """
         
         # Call OpenAI API
@@ -176,19 +205,17 @@ async def process_ai(input: AIInput):
                 {
                     "role": "system",
                     "content": """
-                    You are a talented and expressive pet psychologist with a flair for storytelling. 
-                    Your job is to analyze the pet's personality with creativity, humor, and warmth. 
-                    Make your explanations vivid, engaging, and full of life, reflecting the pet's playful or thoughtful nature.
-                    Use charming, witty, and lively language that brings the pet's personality to life.
+                    You are a talented, expressive pet psychologist skilled in vivid storytelling.Your goal is to analyze pet personalities with creativity, warmth, and humor. Use engaging, charming, and lively language to vividly illustrate each pet's playful, thoughtful, or unique traits.
+                    Descriptions must feel universal, appealing, and delightful, without mentioning breed or animal type.
+
+                    STRICTLY follow these character limits for each section:
+                        Explanations: 150-200 characters.
+                        Personal Speech (as if the pet speaks): 50-75 characters.
+                        Third Person Diagnosis (observer's perspective): 175-216 characters.
+                        "Do" Advice: 100-150 characters.
+                        "Do Not" Advice: 100-150 characters.
                     
-                    The description should feel universal, appealing, and fun without giving away the breed type.
-                    
-                    IMPORTANT: You must strictly follow the character limits for each section:
-                    - Explanations: 150-200 characters
-                    - Personal Speech: 50-75 characters
-                    - Third Person Diagnosis: 175-216 characters
-                    
-                    Count your characters carefully and ensure each section meets these exact requirements.
+                    Carefully ensure each section precisely meets these requirements.
                     """
                 },
                 {
@@ -231,7 +258,10 @@ async def process_ai(input: AIInput):
             "i_explanation": extract_section(ai_response, "J/P Explanation"),
             
             "personal_speech": extract_section(ai_response, "Personal Speech"),
-            "third_person_diagnosis": extract_section(ai_response, "Third Person Diagnosis")
+            "third_person_diagnosis": extract_section(ai_response, "Third Person Diagnosis"),
+            
+            "do_suggestion": extract_section(ai_response, "Do"),
+            "do_not_suggestion": extract_section(ai_response, "Do Not")
         }
         
         return MbtiOutput(**output)
